@@ -1,0 +1,26 @@
+[project]
+name = "omenlogic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "komaravolu-kulwanth", email = "ikki.workspace@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "fastapi>=0.135.1",
+    "jinja2>=3.1.6",
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "tensorflow-cpu>=2.21.0",
+    "uvicorn[standard]>=0.41.0",
+]
+
+[project.scripts]
+omenlogic = "omenlogic:main"
+
+[build-system]
+requires = ["uv_build>=0.10.10,<0.11.0"]
+build-backend = "uv_build"
